@@ -8,8 +8,8 @@ plugins {
     alias(libs.plugins.vanniktech.mavenPublish)
 }
 
-group = "io.github.kotlin"
-version = "1.0.0"
+group = "asia.hombre.brotli"
+version = "0.0.1"
 
 kotlin {
     jvm()
@@ -40,7 +40,7 @@ kotlin {
 }
 
 android {
-    namespace = "org.jetbrains.kotlinx.multiplatform.library.template"
+    namespace = "asia.hombre.brotli"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -52,31 +52,25 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates(group.toString(), "library", version.toString())
+    coordinates(group.toString(), "brotlikotlin", version.toString())
 
     pom {
-        name = "My library"
-        description = "A library."
+        name = "BrotliKotlin"
+        description = "A KMM binding for the rust-brotli project"
         inceptionYear = "2024"
-        url = "https://github.com/kotlin/multiplatform-library-template/"
+        url = "https://github.com/ronhombre/BrotliKotlin"
         licenses {
-            license {
-                name = "XXX"
-                url = "YYY"
-                distribution = "ZZZ"
-            }
+            //TODO
         }
         developers {
             developer {
-                id = "XXX"
-                name = "YYY"
-                url = "ZZZ"
+                id = "ronhombre"
+                name = "Ron Lauren Hombre"
+                url = "https://github.com/ronhombre"
             }
         }
         scm {
-            url = "XXX"
-            connection = "YYY"
-            developerConnection = "ZZZ"
+            url = "https://github.com/ronhombre"
         }
     }
 }

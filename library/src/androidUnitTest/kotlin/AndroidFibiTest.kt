@@ -1,4 +1,4 @@
-package io.github.kotlin.fibonacci
+package asia.hombre.brotli
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

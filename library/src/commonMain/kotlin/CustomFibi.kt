@@ -1,4 +1,4 @@
-package io.github.kotlin.fibonacci
+package asia.hombre.brotli
 
 fun generateFibi() = sequence {
     var a = firstElement
